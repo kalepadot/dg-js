@@ -10,3 +10,11 @@ html,body {
     background-color: #000;
     color: #fff;
 }
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
