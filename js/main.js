@@ -7,3 +7,5 @@ console.log(typeof true);
 const myVariable = "mathematics";
 //The length property
 console.log(myVariable.length);
+console.log(myVariable.charAt(6));
+console.log(myVariable.indexOf("kale"));
