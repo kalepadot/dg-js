@@ -2,8 +2,7 @@
 
 let myNumber = 0;
 
-while (myNumber < 50) {
+do {
+  myNumber += 2;
   console.log(myNumber);
-  myNumber = myNumber + 1;
-  //or myNumber++;
-}
+} while (myNumber < 50);
