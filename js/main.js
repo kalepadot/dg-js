@@ -1,5 +1,11 @@
 //Loops
 let name = "jeremy";
-for (let i = 0; i <= name.length; i++) {
-  console.log(name.charAt(i));
+
+let counter = 0;
+let myLetter;
+while (true) {
+  myLetter = name[counter];
+  console.log(myLetter);
+  if (myLetter === "m") break;
+  counter++;
 }
