@@ -7,7 +7,7 @@ Math.random();
 
 //Function Declaration Syntax:
 //Accept an email stop at @
-const getUserNameFromEmail = function (email) {
+const getUserNameFromEmail = (email) => {
   return email.slice(0, email.indexOf("@"));
 };
 
