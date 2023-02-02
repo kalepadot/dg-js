@@ -7,10 +7,10 @@ Math.random();
 
 //Function Declaration Syntax:
 
-function sum() {
-  return 2 + 2;
+function sum(num1, num2) {
+  return num1 + num2;
 }
 
 //A function needs to be called to action
 
-console.log(sum());
+console.log(sum(2, 6));
