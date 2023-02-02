@@ -6,11 +6,9 @@
 Math.random();
 
 //Function Declaration Syntax:
-
-function sum(num1, num2) {
-  return num1 + num2;
+//Accept an email stop at @
+function getUserNameFromEmail(email) {
+  return email.slice(0, email.indexOf("@"));
 }
 
-//A function needs to be called to action
-
-console.log(sum(2, 6));
+console.log(getUserNameFromEmail("playerOne@gmail.com"));
