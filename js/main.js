@@ -7,8 +7,8 @@ Math.random();
 
 //Function Declaration Syntax:
 //Accept an email stop at @
-function getUserNameFromEmail(email) {
+const getUserNameFromEmail = function (email) {
   return email.slice(0, email.indexOf("@"));
-}
+};
 
 console.log(getUserNameFromEmail("playerOne@gmail.com"));
