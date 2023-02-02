@@ -1,13 +1,23 @@
-// Code Challenge
+//Conditionals: If Statements
 
-//Write code that will return a random letter form your name
+//syntax
 
-console.log(typeof "jeremy");
-//this is a string
+// if (condition) {
+//run some code
+// } else {
+//run some different code
+// }
 
-console.log("jeremy".charAt(Math.floor(Math.random() * 6)));
+let soup = "chicken noodle soup";
+let reply;
+let customerIsBanned = true;
+let crackers = true;
 
-//Apply to any name, needs var to hold string data
-
-const anyName = "Cori";
-console.log(anyName.charAt(Math.floor(Math.random() * anyName.length)));
+if (customerIsBanned) {
+  reply = "no soup for you";
+} else if (soup && crackers) {
+  reply = `Here's your order of ${soup} & crackers`;
+} else {
+  reply = `sorry, we're out of ${soup}`;
+}
+console.log(reply);
