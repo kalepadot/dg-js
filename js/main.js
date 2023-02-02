@@ -1,18 +1,40 @@
-let testScore = 89;
-let grade;
-let collegeStudent = true;
-if (testScore > 90) {
-  grade = "A";
-} else if (testScore >= 80) {
-  grade = "B";
-} else if (testScore >= 70) {
-  grade = "c";
-} else if (testScore >= 60) {
-  grade = "d";
-} else {
-  if (collegeStudent) {
-    grade = "u";
+let playGame = confirm("shall we play rock, paper, or scissors?");
+if (playGame) {
+  //play
+  let playerChoice = prompt("please enter rock, paper, or scissors");
+  if (playerChoice) {
+    let playerOne = playerChoice.trim().toLowerCase();
+    if (
+      playerOne === "rock" ||
+      playerOne === "paper" ||
+      playerOne === "scissors"
+    ) {
+      let computerChoice = Math.floor(Math.random() * 3 + 1);
+      let computer =
+        computerChoice === 1
+          ? "rock"
+          : computerChoice === 2
+          ? "paper"
+          : "scissors";
+      let result =
+        playerOne === computer
+          ? "Tie game!"
+          : playerOne === "rock" && computer === "paper"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : playerOne === "paper" && computer === "scissors"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : playerOne === "scissors" && computer === "rock"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : `playerOne: ${playerOne}\nComputer: ${computer}\nplayerOne wins!`;
+      alert(result);
+      let playAgain = confirm("Play Again?");
+      playAgain ? location.reload() : alert("Ok, thanks for playing.");
+    } else {
+      alert("You didn't enter rock, paper, or scissors.");
+    }
   } else {
-    grade = "f";
+    alert("I guess you changed your mind. Maybe next time.");
   }
+} else {
+  alert("Ok, maybe next time.");
 }
