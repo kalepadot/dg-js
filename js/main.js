@@ -1,9 +1,14 @@
-//loops
+//Functions
 
-let myNumber = 0;
+//Methods = Built - in Functions !
 
-while (myNumber < 50) {
-  console.log(myNumber);
-  myNumber = myNumber + 1;
-  //or myNumber++;
+"Jeremy".toLowerCase();
+Math.random();
+
+//Function Declaration Syntax:
+//Accept an email stop at @
+function getUserNameFromEmail(email) {
+  return email.slice(0, email.indexOf("@"));
 }
+
+console.log(getUserNameFromEmail("playerOne@gmail.com"));
