@@ -7,8 +7,9 @@ Math.random();
 
 //Function Declaration Syntax:
 //Accept an email stop at @
-function getUserNameFromEmail(email) {
-  return email.slice(0, email.indexOf("@"));
-}
 
-console.log(getUserNameFromEmail("playerOne@gmail.com"));
+const toProperCase = (name) => {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+};
+
+console.log(toProperCase("jeremy"));
