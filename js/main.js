@@ -10,6 +10,6 @@ myArray.push("school");
 
 console.log(myArray);
 
-myArray.pop();
+const lastItem = myArray.pop();
 
-console.log(myArray);
+console.log(lastItem);
