@@ -1,18 +1,15 @@
-//var, let, and const
+// Arrays
+const myArray = [];
 
-//global scope
+//add elements to an array
+myArray[0] = "jeremy";
+myArray[1] = 1001;
+myArray[2] = false;
 
-var x = 1;
-let y = 2;
-const z = 3;
-console.log(x);
-//local scope
+myArray.push("school");
 
-{
-  let y = 4;
-}
+console.log(myArray);
 
-//local scope
-function myFunc() {
-  const z = 5;
-}
+const lastItem = myArray.pop();
+
+console.log(lastItem);
